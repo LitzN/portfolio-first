@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONTAWESOME ICONS -->
+    <script
+      src="https://kit.fontawesome.com/c2af92f582.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CUSTOM STYLE SHEET-->
+    <link rel="stylesheet" href="style.css" />
+    <title>Alitzia Nedyalkova</title>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <!--NAVIGATION-->
+      <div class="row">
+        <div id="nav" class="col nav flex justify-content-evenly">
+          <div class="nav-logo"></div>
+          <div class="nav-link"><a href="#about">about</a></div>
+          <div class="nav-link"><a href="#projects">projects</a></div>
+          <div class="nav-link"><a href="#contact">contact</a></div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="nav" class="col stat-nav flex justify-content-evenly">
+          <div class="nav-logo"></div>
+          <div class="nav-link"><a href="#about">about</a></div>
+          <div class="nav-link"><a href="#projects">projects</a></div>
+          <div class="nav-link"><a href="#contact">contact</a></div>
+        </div>
+      </div>
+      <!--HERO SECTION-->
+      <div class="row">
+        <div class="col d-flex justify-content-center theme-background">
+          <video
+            class="hero"
+            autoplay
+            muted
+            loop
+            src="./images/hero.mp4"
+          ></video>
+        </div>
+      </div>
+      <!--ABOUT SECTION-->
+      <div id="about" class="row">
+        <div class="col-12 text-center">
+          <p class="heading">About Me</p>
+        </div>
+        <div class="offset-1 col-4">
+          <img src=".\images\me.png" class="float-end p-3 me d-inline" alt="" />
+        </div>
+        <div class="col-6">
+          <p class="about-text">
+            Trained in Full Stack Development.
+            <br />
+            I believe in finding problems logically and solving them creatively.
+            <br />Finding a solution, then finding the best solution.
+            <br />Creating striking content with intuitive design.
+          </p>
+        </div>
+      </div>
+      <!-- STACK ROW  -->
+      <div id="stack" class="row pb-5">
+        <div class="col-12 text-center">
+          <p class="heading">My Stack</p>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 text-center">
+          <p class="stack-text">HTML5</p>
+          <img src="./images/html.png" class="stack-img" alt="html logo" />
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 text-center">
+          <p class="stack-text">CSS3</p>
+          <img src="./images/css3.png" class="stack-img" alt="html logo" />
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 text-center">
+          <p class="stack-text">JAVASCRIPT</p>
+          <img
+            src="./images/javascript.png"
+            class="stack-img"
+            alt="html logo"
+          />
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 text-center">
+          <p class="stack-text">PYTHON</p>
+          <img src="./images/python.png" class="stack-img" alt="html logo" />
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 text-center">
+          <p class="stack-text">MYSQL</p>
+          <img src="./images/mysql.png" class="stack-img" alt="html logo" />
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 text-center">
+          <p class="stack-text">MONGODB</p>
+          <img src="./images/mongodb.svg" class="stack-img" alt="html logo" />
+        </div>
+        <div
+          class="offset-sm-2 offset-md-0 col-md-3 col-sm-4 col-6 text-center"
+        >
+          <p class="stack-text">FLASK</p>
+          <img src="./images/flask.png" class="stack-img" alt="html logo" />
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 text-center">
+          <p class="stack-text">DJANGO</p>
+          <img src="./images/django.webp" class="stack-img" alt="html logo" />
+        </div>
+      </div>
+      <!--PROJECTS-->
+      <div id="projects" class="row theme-background text-light">
+        <div class="col-12 text-center">
+          <p class="heading">Projects</p>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="proj-container">
+            <div id="proj-1" class="img">
+              <img
+                src="./images/keto-sh.png"
+                id="proj1img"
+                class="project-display"
+                alt="keto meals website image"
+              />
+            </div>
+            <div class="proj-txt">
+              <p class="subheading" style="display: inline">Keto Meals</p>
+              <div class="proj-buttons d-md-inline justify-content-around">
+                <div id="proj1PeekBtn" class="right d-inline p-0 p-md-2">
+                  <a href="#proj-1">Sneak Peek</a>
+                </div>
+                <div class="right d-none d-md-inline">
+                  <a
+                    href="https://ketomeals.onrender.com/"
+                    target="_blank"
+                    class="right"
+                    >Live Site</a
+                  >
+                </div>
+                <div class="right d-none d-md-inline">
+                  <a
+                    href="https://github.com/LitzN/KetoMeals"
+                    target="_blank"
+                    class="right"
+                    >Source code</a
+                  >
+                </div>
+              </div>
+              <p class="description">
+                Keto meals is a database website for keto food created with
+                flask. The primary objective of the project was to allow users
+                to create, update, delete and view recipes. Users are also able
+                to 'favourite' recipes from other users in order to access them
+                easily through their profile page.<br />
+                The secondary purpose of the site was to promote a brand of
+                cookware, these promotions are seen throughout the site under
+                recipes and the products advertised are automatically created to
+                match the tools required for each recipe.
+              </p>
+              <p class="subheading tech-head" style="display: inline">
+                Technology used:
+              </p>
+              <p class="proj-stack">HTML, CSS, PYTHON, FLASK, MONGODB</p>
+              <div class="proj-buttons d-flex justify-content-around d-md-none">
+                <div class="right">
+                  <a
+                    href="https://ketomeals.onrender.com/"
+                    target="_blank"
+                    class="right"
+                    >Live Site</a
+                  >
+                </div>
+                <div class="right">
+                  <a
+                    href="https://github.com/LitzN/KetoMeals"
+                    target="_blank"
+                    class="right"
+                    >Source code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12"></div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="proj-container">
+            <div id="proj-2" class="img">
+              <img
+                src="./images/moviedb.png"
+                id="proj1img"
+                class="project-display"
+                alt="keto meals website image"
+              />
+            </div>
+            <div class="proj-txt">
+              <p class="subheading" style="display: inline">MovieDB</p>
+              <div class="proj-buttons d-md-inline justify-content-around">
+                <div id="proj1PeekBtn" class="right d-inline p-0 p-md-2">
+                  <a href="#proj-2">Sneak Peek</a>
+                </div>
+                <div class="right d-none d-md-inline">
+                  <a href="#" target="_blank" class="right">Live Site</a>
+                </div>
+                <div class="right d-none d-md-inline">
+                  <a href="#" target="_blank" class="right">Source code</a>
+                </div>
+              </div>
+              <p class="description">
+                Building in process.<br />
+                A Movie database created on flask, which will allows users to
+                search for movies with a range of criteria. As well as give them
+                the ability to create an account which will allow them to add to
+                the database.
+              </p>
+              <p class="subheading tech-head" style="display: inline">
+                Technology used:
+              </p>
+              <p class="proj-stack">HTML, CSS, PYTHON, FLASK, SQLLITE</p>
+              <div class="proj-buttons d-flex justify-content-around d-md-none">
+                <div class="right">
+                  <a href="#" target="_blank" class="right">Live Site</a>
+                </div>
+                <div class="right">
+                  <a href="#" target="_blank" class="right">Source code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12"></div>
+        </div>
+      </div>
+      <!-- CONTACT -->
+      <div id="contact" class="row theme-background" style="margin-top: -2px">
+        <div class="offset-1 col-10 offset-md-1 col-md-5 text-center">
+          <div class="contact-me-sign"></div>
+          <p class="text-light">
+            Leave me a message or find me on linkdin below! Look forward to
+            hearing from you!
+          </p>
+          <p class="linked-in">
+            <a href="https://www.linkedin.com/in/alitzia-nedyalkova/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </p>
+        </div>
+        <!--  FORM  -->
+        <div class="offset-1 col-10 offset-md-0 col-md-5 mt-5">
+          <div class="form-container bkg-2">
+            <form action="">
+              <div class="mb-3">
+                <label for="user_name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="user_name"
+                  placeholder="Suzie Smith"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="user_email" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="user_email"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Leave a message</label>
+                <textarea class="form-control" id="message" rows="5"></textarea>
+              </div>
+              <div class="mb-3 text-center">
+                <button
+                  type="button"
+                  class="btn submit-btn btn-lg"
+                  onclick="sendMail()"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--FOOTER-->
+      <div class="row footer">
+        <div class="col-6 contact">
+          <p>Get in touch!</p>
+        </div>
+        <div class="col-6">
+          <i class="fa-brands fa-github links"></i>
+          <i class="fa-brands fa-linkedin links"></i>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("kf-5Ah6jQLAFLbUqK");
+      })();
+    </script>
+    <script src="./app.js"></script>
+  </body>
+</html>
