@@ -344,7 +344,7 @@ form{
     }
 
     .proj-stack{
-        float: right;
+        text-align: right;
         margin-top: 0.5rem;
     }
 
@@ -413,7 +413,6 @@ form{
         padding-left: 1rem;
     }
     .proj-stack{
-        display: inline;
         font-size:1.5rem;
     }
 
