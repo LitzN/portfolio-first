@@ -1,24 +1,29 @@
 nav = document.getElementById('nav')
 proj1PeekBtn = document.getElementById('proj1PeekBtn')
 proj2PeekBtn = document.getElementById('proj2PeekBtn')
+proj3PeekBtn = document.getElementById('proj3PeekBtn')
 proj1div = document.getElementById('proj-1')
 proj2div = document.getElementById('proj-2')
+proj3div = document.getElementById('proj-3')
 proj1img = document.getElementById('proj1img')
 proj2img = document.getElementById('proj2img')
+proj3img = document.getElementById('proj3img')
 navHeight = nav.offsetHeight;
 video1 = document.createElement('video')
 video2 = document.createElement('video')
+video3 = document.createElement('video')
 video1.src =
   './images/KetoMeals-fave.mp4';
 video2.src = './images/MovieDB.mp4'
-video2.controls = video1.controls = true;
-video2.muted = video1.muted = true;
-video2.autoplay = video1.autoplay = true;
-video2.height = video1.height = 400;
-video2.width = video1.width = 400;
+video3.src = './images/hennas.mp4'
+video2.controls = video1.controls = video3.controls = true;
+video2.muted = video1.muted = video3.muted = true;
+video2.autoplay = video1.autoplay = video3.autoplay = true;
+video2.height = video1.height = video3.height = 400;
+video2.width = video1.width = video3.width = 400;
 video1.classList.add('project-display')
 video2.classList.add('project-display')
-
+video3.classList.add('project-display')
 
 
 window.onscroll = function(e) {
@@ -53,7 +58,15 @@ proj2PeekBtn.addEventListener('click',()=>{
     }
 })
 
-
+proj3PeekBtn.addEventListener('click',()=>{
+    if (proj3div.classList.contains('img')){
+        proj3div.replaceChild(video3,proj3img)
+        proj3div.classList.replace('img','vid');
+    } else if (proj3div.classList.contains('vid')){
+        proj3div.replaceChild(proj3img,video3)
+        proj3div.classList.replace('vid','img');
+    }
+})
 
 function sendMail(){
     var params = {
