@@ -31,6 +31,14 @@ html{
     background-size:contain;
 }
 
+.theme-font{
+    font-family: var(--font-2);
+}
+
+.bkg-1{
+    background-color:var(--bright-pink);
+}
+
 .bkg-2{
     background-color: var(--dark-purple);
 }
@@ -317,7 +325,7 @@ form{
     }
 
     .about-text{
-        font-size:1.5rem;
+        font-size:1rem;
     }
 
     .stack-img{
@@ -401,7 +409,8 @@ form{
         padding-left:3rem;
         padding-right:3rem;
         padding-top:3rem;
-        line-height:4rem;
+        line-height:2rem;
+        font-size:1.5rem;
     }
     
     .proj-buttons div a {
