@@ -9,7 +9,7 @@
     --font-2:'Anton', sans-serif;
 }
 
-html{
+body{
     overflow-x: hidden;
     max-width:100vw;
 }
@@ -95,7 +95,7 @@ html{
 /*   HERO   */
 
 .hero{
-    width:120vw;
+    max-width:100vw;
     margin-top:-2px;
     background-size:cover;
 }
@@ -338,7 +338,7 @@ form{
     }
 
     .proj-buttons div a {
-    font-size:1.3rem;
+    font-size:1rem;
     }
 
     .right{
